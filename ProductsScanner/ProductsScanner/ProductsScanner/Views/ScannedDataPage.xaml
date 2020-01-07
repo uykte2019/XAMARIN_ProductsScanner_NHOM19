@@ -1,0 +1,75 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="ProductsScanner.Views.ScannedDataPage"
+             BackgroundColor="#686868">
+    <ContentPage.Resources>
+        <ResourceDictionary>
+            <Style TargetType="Label">
+                <Setter Property="FontSize" Value="25" />
+            </Style>
+        </ResourceDictionary>
+    </ContentPage.Resources>
+
+    <StackLayout>
+        <Label Text="Scanned Code" FontSize="30" HorizontalOptions="CenterAndExpand" TextColor="#F07929"></Label>
+        <Editor Text="{Binding ScannedData}" TextColor="White"></Editor>
+        <StackLayout HorizontalOptions="Center">
+            <Button
+                Text="Search on Google"
+                Command="{Binding GoogleSearchCommand}"
+                TextColor="#F07929"
+                BackgroundColor="#686868"
+                BorderColor="#F07929"
+                BorderWidth="2"
+                CornerRadius="30"
+                VerticalOptions="Center"
+                HorizontalOptions="Center">
+            </Button>
+            <Button
+                Text="Open in browser"
+                Command="{Binding OpenInBrowserCommand}"
+                TextColor="#F07929"
+                BackgroundColor="#686868"
+                BorderColor="#F07929"
+                BorderWidth="2"
+                CornerRadius="30"
+                VerticalOptions="Center"
+                HorizontalOptions="Center">
+            </Button>
+            <Button 
+                Text="Share scanned code"
+                Command="{Binding ShareCommand}"
+                TextColor="#F07929"
+                BackgroundColor="#686868"
+                BorderColor="#F07929"
+                BorderWidth="2"
+                CornerRadius="30"
+                VerticalOptions="Center"
+                HorizontalOptions="Center">
+            </Button>
+            <Button 
+                Text="Save to history"
+                Command="{Binding SaveToHistoryCommand}"
+                TextColor="#F07929"
+                BackgroundColor="#686868"
+                BorderColor="#F07929"
+                BorderWidth="2"
+                CornerRadius="30"
+                VerticalOptions="Center"
+                HorizontalOptions="Center">
+            </Button>
+            <Button 
+                Text="Cancel"
+                Command="{Binding ReturnToScannerCommand}"
+                TextColor="#F07929"
+                BackgroundColor="#686868"
+                BorderColor="#F07929"
+                BorderWidth="2"
+                CornerRadius="30"
+                VerticalOptions="Center"
+                HorizontalOptions="Center">
+            </Button>
+        </StackLayout>
+    </StackLayout>
+</ContentPage>

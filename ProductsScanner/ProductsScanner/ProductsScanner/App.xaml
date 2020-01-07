@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Application xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="ProductsScanner.App">
+    <Application.Resources>
+        <ResourceDictionary>
+            <!--Global Styles-->
+            <Color x:Key="NavigationPrimary"></Color>
+            <Style TargetType="NavigationPage">
+                <Setter Property="BarBackgroundColor" Value="#525252" />
+                <Setter Property="BarTextColor" Value="#F07929" />
+            </Style>
+        </ResourceDictionary>
+    </Application.Resources>
+</Application>
